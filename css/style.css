@@ -28,9 +28,6 @@ body{
     background-color:white !important;
 }
 
-
-
-
 /* NAVIGATION BAR BLINK ANIMATION */
 
 
@@ -233,7 +230,7 @@ padding :20px 30px 20px 30px;
     background-color:rgb(227, 230, 228 , .70);
 
     border-radius: 10px 10px 0  0;
-    font-size:40px;
+    font-size:20px;
 
     font-family: lightfont;
   }
