@@ -27,34 +27,7 @@
 body{
     background-color:white !important;
 }
-/* BACKGROUND ANIMATION */
-.circle{
-    margin-left:-150px;
-    margin-top:200px;
-    height:600px;
-    width:600px;
-    border-radius: 600px;
-    background-color:var(--toxic);
-    filter: blur(682px);
-    opacity:80%;
-    box-shadow: 20px 10px 600px 10px var(--toxic);
-    animation-name:BG;
-    animation-duration: 20s;
-    position:fixed;
-    z-index:-10;
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    
-}
-@keyframes BG {
-    0%   { left:0px; top:0px;}
-    15%  { left:500px; top:200px;}
-    30% {left:600px; top:100px;}
-    45% {left:400px; top:100px;}
-    60%  { left:500px; top:0px;}
-    75%  { left:0px; top:200px;}
-    100% { left:0px; top:0px;}
-  }
+
 
 
 
