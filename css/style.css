@@ -72,7 +72,7 @@ body{
     color:white;
     height:60px;
     top:0;
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(10px); 
 }
 .navbg{
     background-color: rgba(0, 0, 0, .80);
@@ -101,7 +101,7 @@ padding :20px 30px 20px 30px;
     color:var(--toxic);
     font-size:25px;
     display: flex;
-    font-family: boldfont;
+    font-family: lightFont;
     font-weight: lighter;
     align-items: center;
 }
@@ -116,7 +116,7 @@ padding :20px 30px 20px 30px;
         transition: 0.4s ease;
     }
     #logoimg:hover{
-        filter: drop-shadow(0px 0px 10px var(--toxic));
+        filter: drop-shadow(0px 0px 5px var(--toxic));
         cursor: pointer;
         transition: 0.2s ;
     }
@@ -133,7 +133,7 @@ padding :20px 30px 20px 30px;
     animation:animate 5s linear infinite;  
   }
   .logo:hover  .noBlink{
-    text-shadow:0 0 12px var(--toxic);
+    text-shadow:0 0 2px var(--toxic);
     transition: 0.2s ;
   }
 
@@ -146,7 +146,7 @@ padding :20px 30px 20px 30px;
     }
     18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
         color:var(--toxic);
-        text-shadow:0 0 12px var(--toxic);
+        text-shadow:0 0 2px var(--toxic);
     
     }
 }  
@@ -165,12 +165,10 @@ padding :20px 30px 20px 30px;
         display:block;
         position: absolute;
         right:30px;
-        top:28px;
+        top:30px;
     }
     .menu:hover{
         cursor: pointer;
-    
-       
     }
     .list-item{
         display:block;
@@ -190,10 +188,52 @@ padding :20px 30px 20px 30px;
         display: block;
        
     } 
+    #rightbox{
+        font-size: 70px !important;
+    }
 }
 
+.flex-container{
+    display: flex;
+    /* background-color: black; */
+    width:100%;
+    height:700px;
+    color:white;
+    font-size: 30px;
+    font-family: boldFont;
+    align-items: center;
+    text-align: center;
+}
+#rightbox{
+    font-size:90px;
+    text-align: center;
+    padding:20px;
+}
+#link1{
+    text-decoration: none;
+    color: yellow;
+}
+#link1:hover{
+    border:2px solid red;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.flex-item{
+    
+    flex:50%;
+}
+#tagline{
+    font-size: 20px;
 
-
+}
+@media all and (max-width:1000px)
+{
+    .flex-container{
+        flex-direction: column-reverse;
+       
+    }
+}
 
 
 
@@ -217,6 +257,8 @@ padding :20px 30px 20px 30px;
 
   .para{
     color:white;
+    background-color: rgba(0, 0, 0 );
+    border-radius: 10px 10px 0  0;
     font-size:40px;
     font-family: lightfont;
   }
