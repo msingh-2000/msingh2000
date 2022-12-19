@@ -1,0 +1,222 @@
+@font-face {
+    font-family: myFont; 
+    src: url(fonts/font.ttf);
+}
+@font-face {
+    font-family: logoFont; 
+    src: url(fonts/SecularOne-Regular.ttf);
+}
+@font-face {
+    font-family: lightfont;
+    src: url(fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: boldfont;
+    src: url(fonts/Manrope-SemiBold.ttf);
+}
+:root{
+    --color-1: black;
+    --color-2:#82CD47;
+    --toxic:#39FF14;
+  }
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black !important;
+}
+/* BACKGROUND ANIMATION */
+.circle{
+    margin-left:-150px;
+    margin-top:200px;
+    height:600px;
+    width:600px;
+    border-radius: 600px;
+    background-color:var(--toxic);
+    filter: blur(682px);
+    opacity:80%;
+    box-shadow: 20px 10px 600px 10px var(--toxic);
+    animation-name:BG;
+    animation-duration: 20s;
+    position:fixed;
+    z-index:-10;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    
+}
+@keyframes BG {
+    0%   { left:0px; top:0px;}
+    15%  { left:500px; top:200px;}
+    30% {left:600px; top:100px;}
+    45% {left:400px; top:100px;}
+    60%  { left:500px; top:0px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+  }
+
+
+
+/* NAVIGATION BAR BLINK ANIMATION */
+
+
+/*NavigationBar CSS*/
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+   background-color: none;
+    align-items: center;
+    color:white;
+    height:60px;
+    top:0;
+    backdrop-filter: blur(5px); 
+}
+.navbg{
+    background-color: rgba(0, 0, 0, .80);
+    position: sticky;
+    top:0;
+}
+
+.nav-list{
+    list-style-type: none;
+    
+}
+.nav-list , .list-item{
+display: inline-block;
+padding :20px 30px 20px 30px;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    
+}
+.list-item{
+    font-family: myFont;
+    font-size: 12px;
+}
+.logo a{
+    color:var(--toxic);
+    font-size:25px;
+    display: flex;
+    font-family: boldfont;
+    font-weight: lighter;
+    align-items: center;
+}
+.navbar li:hover {
+    background-color: var(--color-2);
+    transition: 0.4s ease;
+    cursor: pointer;
+    }
+    .navbar li:hover > a{
+        color:black;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    #logoimg:hover{
+        filter: drop-shadow(0px 0px 10px var(--toxic));
+        cursor: pointer;
+        transition: 0.2s ;
+    }
+    .menu{
+       display:none;
+    }
+    .menu-line{
+        width:20px;
+        height:3px;
+        background-color: white;
+        margin-bottom: 4px;
+    }
+.Blink{
+    animation:animate 5s linear infinite;  
+  }
+  .logo:hover  .noBlink{
+    text-shadow:0 0 12px var(--toxic);
+    transition: 0.2s ;
+  }
+
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color:#0f570f;
+        text-shadow: none;
+       
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color:var(--toxic);
+        text-shadow:0 0 12px var(--toxic);
+    
+    }
+}  
+
+/* NAVIGATION BAR FOR MOBILE */
+@media all and (max-width:1000px)
+{
+    .navbar{
+        flex-direction: column;
+        padding:20px;
+        position: sticky !important;
+        overflow: hidden;
+        height:100%;
+    }
+    .menu{
+        display:block;
+        position: absolute;
+        right:30px;
+        top:28px;
+    }
+    .menu:hover{
+        cursor: pointer;
+    
+       
+    }
+    .list-item{
+        display:block;
+        
+    }
+    .nav-list{
+        width:100%;
+        text-align: left;
+        padding-top: 10px;
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        
+    }
+    .active{
+        display: block;
+       
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  section{
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }
+
+
+
+
+
+  .para{
+    color:white;
+    font-size:40px;
+    font-family: lightfont;
+  }
