@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:white !important;
+    background-color:black !important;
 }
 /* BACKGROUND ANIMATION */
 .circle{
@@ -69,7 +69,7 @@ body{
     justify-content: space-around;
    background-color: none;
     align-items: center;
-    color:;
+    color:white;
     height:60px;
     top:0;
     backdrop-filter: blur(10px); 
@@ -198,7 +198,7 @@ padding :20px 30px 20px 30px;
     /* background-color: black; */
     width:100%;
     height:700px;
-    color:black;
+    color:white;
     font-size: 30px;
     font-family: boldFont;
     align-items: center;
@@ -211,10 +211,10 @@ padding :20px 30px 20px 30px;
 }
 #link1{
     text-decoration: none;
-    color: rgb(37, 150, 190);
+    color: yellow;
 }
 #link1:hover{
-    border:2px solid rgb(37, 150, 190);
+    border:2px solid red;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -256,12 +256,9 @@ padding :20px 30px 20px 30px;
 
 
   .para{
-    color:black;
-    background-color:rgb(227, 230, 228 , .70);
-
+    color:white;
+    background-color: rgba(0, 0, 0 );
     border-radius: 10px 10px 0  0;
     font-size:40px;
-
     font-family: lightfont;
   }
- 
