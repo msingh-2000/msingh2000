@@ -159,7 +159,7 @@ padding :20px 30px 20px 30px;
        
     } 
     #rightbox{
-        font-size: 70px !important;
+        font-size: 50px !important;
     }
 }
 
@@ -210,22 +210,8 @@ padding :20px 30px 20px 30px;
 
 
 
-
-
-
-
-
-  section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-  }
-
-
-
-
-
   .para{
+    padding:20px;
     color:black;
     background-color:rgb(227, 230, 228 , .70);
 
