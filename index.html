@@ -7,7 +7,13 @@
     <title>TOXIC KITCHENS</title>
     
     <link rel="stylesheet" href="css/style.css">
-   
+   <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const navList = document.getElementById("nav-list");
+    toggleButton.addEventListener('click', () => {
+         navList.classList.toggle('active');
+    });
+</script>
 </head>
 <body>
 
@@ -92,11 +98,5 @@ Even you can make your own.<br>
 </body>
 
 
-<script>
-    const toggleButton = document.getElementById("toggle-button");
-    const navList = document.getElementById("nav-list");
-    toggleButton.addEventListener('click', () => {
-         navList.classList.toggle('active');
-    });
-</script>
+
 </html>
