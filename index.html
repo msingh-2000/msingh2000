@@ -5,45 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXIC KITCHENS</title>
-    
     <link rel="stylesheet" href="css/style.css">
-   <script>
-    const toggleButton = document.getElementById("toggle-button");
-    const navList = document.getElementById("nav-list");
-    toggleButton.addEventListener('click', () => {
-         navList.classList.toggle('active');
-    });
-</script>
 </head>
 <body>
-
-
 <!-- Navigation bar -->
 <div class="navbg">
 <nav class="navbar">
     <div class="logo" style="display: flex;"><img id="logoimg"src="assets/logo.png"height="35px"><a href="index.html"><span class="noBlink"> &nbsp;TOXIC </span><span class='Blink'> &nbsp;KITCHENS</span></a></div>
     <ul class="nav-list"id="nav-list">
-        <li class="list-item"><a href="">| HOME</a></li>
-        <li class="list-item"><a href="">| EXPLORE</a></li>
-        <li class="list-item"><a href="">| RECIPES</a></li>
-        <li class="list-item"><a href="">| ORDERS</a></li>
-        <li class="list-item"><a href="">| USER</a></li>
+        <li class="list-item"><a href="">|&nbsp; HOME</a></li>
+        <li class="list-item"><a href="">|&nbsp; EXPLORE</a></li>
+        <li class="list-item"><a href="">|&nbsp; RECIPES</a></li>
+        <li class="list-item"><a href="">|&nbsp; ORDERS</a></li>
+        <li class="list-item"><a href="">|&nbsp; USER</a></li>
     </ul>
     <div class="menu" id="toggle-button">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
+        <div class="menu-line"id="line-1"></div>
+        <div class="menu-line"id="line-3"></div>
     </div>
 </nav>
+
 </div>
+
+
+
+
+
+
+
+
 
 
 <div class="flex-container">
 <div class="flex-item"id="leftbox">
 
 We prepare food the way you like.<br>
-Even you can make your own.<br> 
-<a href="#"id='link1'>Try Now.</a>
+Even you can make your own.<br> <br>
+<a href="#"id='link1'>Create Now</a>
 </div>
 <div class="flex-item"id="rightbox">
     TOXIC <br>KITCHENS<br>
@@ -51,52 +49,41 @@ Even you can make your own.<br>
 </div>
 </div>
 
+<!-- FLEXBOXES -->
+<div class="container">
+    <div class="items">
+        <img src="assets/foodOrder.jpg"width="100%"class="images"><br>
+        Order Online<br>
+    </div>
+    <div class="items">
+        <img src="assets/customPrep.jpg"width="100%"class="images"><br>
+        Custom Prepration
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
 
-<p class="para"><br><br>Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.
-     Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.
-     Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.
-     Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur
-     Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.
-     Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur.Lorem ipsum, dolor sit amet
-     consectetur adipisicing elit. Iusto quia 
-     assumenda amet accusantium voluptas quibusdam, 
-     sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur<br>
+
     Try Dark  Theme <a href="indexDark.html">Here</a></p>
+
 </body>
 
 
-
+<script>
+//for Toggle Bar
+    const toggleButton = document.getElementById("toggle-button");
+    const navList = document.getElementById("nav-list");
+    toggleButton.addEventListener('click', () => {
+         navList.classList.toggle('active');
+    });
+//for Toggle Bar animation
+    let togglebutton=document.getElementById("toggle-button");
+    togglebutton.onclick = function(){
+        togglebutton.classList.toggle("openmenu")
+    };
+    
+   
+</script>
 </html>
