@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOXIC KITCHENS</title>
+    <link rel="stylesheet" href="css/lightnavbar.css">
+
+
+
+    <style>
+        .tableContent{
+            padding:20px;
+            overflow-x: auto;
+        }
+        
+table{
+    font-family: lightFont;
+    font-size: 20px;
+    width:100%;
+    border-collapse: collapse;
+   
+}
+table td{
+    padding:10px;
+    background-color:#eeeeee;
+   
+}
+table th{
+    padding: 10px;
+    background-color:#39FF14;
+    text-align: left;
+}
+.table tr:hover td{
+    background-color: red;
+}
+    </style>
+</head>
+<body>
+
+
+<!-- Navigation bar -->
+<div class="navbg">
+<nav class="navbar">
+    <div class="logo" style="display: flex;"><a href="index.html"><img id="logoimg"src="assets/logo.png"height="35px"></a><a href="index.html"><span class="noBlink"> &nbsp;TOXIC </span><span class='Blink'> &nbsp;KITCHENS</span></a></div>
+    <ul class="nav-list"id="nav-list">
+        <li class="list-item"><a href="index.html">|&nbsp; HOME</a></li>
+        <li class="list-item"><a href="menu.html">|&nbsp; MENU</a></li>
+        <li class="list-item"><a href="">|&nbsp; RECIPES</a></li>
+        <li class="list-item"><a href="">|&nbsp; ORDERS</a></li>
+        <li class="list-item"><a href="">|&nbsp; USER</a></li>
+    </ul>
+    <div class="menu" id="toggle-button">
+        <div class="menu-line"id="line-1"></div>
+        <div class="menu-line"id="line-3"></div>
+    </div>
+</nav>
+</div>
+
+<!-- RECIPE HEADING -->
+<div class="menuHeading"><span>TOXIC KITCHEN'S </span>RECIPES</div>
+
+<div class="tableContent">
+<table border="0px"align="center">
+    <tr>
+        <th>Ranking</th>
+        <th>Name</th>
+        <th>Creator</th>
+    </tr>
+    <tr>
+        
+        <td><a href="#">1</td>
+        <td>SAMOSA</td>
+        <td>MANPREET SINGH</td></a>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>MOMOS</td>
+        <td>SIMRANJIT SINGH</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>SAMOSA</td>
+        <td>MANPREET SINGH</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>SAMOSA</td>
+        <td>MANPREET SINGH</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>SAMOSA</td>
+        <td>MANPREET SINGH</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>SAMOSA</td>
+        <td>MANPREET SINGH</td>
+    </tr>
+</table>
+</div>
+<br><br>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="sections">Services <ul><li><a href="#"class="links">Food Ordering</a></li>
+                                            <li><a href="#"class="links">Custom Prepration</a></li>
+                                            </ul></div>
+        <div class="sections">About <ul><li><a href="#"class="links">Company</a></li>
+            <li><a href="#"class="links">Team</a></li>
+            </ul></div>
+        <div class="sections">TOXIC KITCHENS<br><p>We make the food for people the way they like it by giving them option of custom prepration.Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus.
+             Aliquam in arcu eget velit pulvinar dictum vel in justo.</p></div>
+             
+    </div>
+    <div class="socialLinks"><a href="https://www.twitter.com/msingh_2000"class="s-links"><img src="assets/twitter.svg"width="40px"style="filter:invert(0);"></a>
+                <a href="https://instagram.com/msingh_2000"class="s-links"><img src="assets/iconmonstr-instagram-15-240.png"width="40px"style="filter:invert(0);"></a>
+            <a href="https://snapchat.com/manpreets1813"class="s-links"><img src="assets/snapchat.png"width="40px"style="filter:invert(0);"></a></a>
+        <a href="https://facebook.com/manpreetsingh"class="s-links"><img src="assets/facebook.svg"width="40px"style="filter:invert(0);"></a>
+    </div>
+    <div class="copyright">
+      Copyright © 2022 TOXIC KITCHENS Inc. All rights reserved
+    </div>
+</footer>
+<body>
+
+
+
+
+    <!-- Navigation Bar JS -->
+<script>
+    //for Toggle Bar
+        const toggleButton = document.getElementById("toggle-button");
+        const navList = document.getElementById("nav-list");
+        toggleButton.addEventListener('click', () => {
+             navList.classList.toggle('active');
+        });
+    //for Toggle Bar animation
+        let togglebutton=document.getElementById("toggle-button");
+        togglebutton.onclick = function(){
+            togglebutton.classList.toggle("openmenu")  
+        };
+    </script>
+</html>

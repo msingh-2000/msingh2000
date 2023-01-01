@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+
 <!-- Navigation bar -->
 <div class="navbg">
 <nav class="navbar">
-    <div class="logo" style="display: flex;"><img id="logoimg"src="assets/logo.png"height="35px"><a href="index.html"><span class="noBlink"> &nbsp;TOXIC </span><span class='Blink'> &nbsp;KITCHENS</span></a></div>
+    <div class="logo" style="display: flex;"><a href="index.html"><img id="logoimg"src="assets/logo.png"height="35px"></a><a href="index.html"><span class="noBlink"> &nbsp;TOXIC </span><span class='Blink'> &nbsp;KITCHENS</span></a></div>
     <ul class="nav-list"id="nav-list">
         <li class="list-item"><a href="">|&nbsp; HOME</a></li>
-        <li class="list-item"><a href="">|&nbsp; EXPLORE</a></li>
-        <li class="list-item"><a href="">|&nbsp; RECIPES</a></li>
+        <li class="list-item"><a href="menu.html">|&nbsp; MENU</a></li>
+        <li class="list-item"><a href="recipe.html">|&nbsp; RECIPES</a></li>
         <li class="list-item"><a href="">|&nbsp; ORDERS</a></li>
         <li class="list-item"><a href="">|&nbsp; USER</a></li>
     </ul>
@@ -27,50 +29,112 @@
 
 </div>
 
+<!-- SECTION TOP -->
+
+<div class="sectionTop">
+    
+   
+        
+        <div class="heading">
+            <div class="searchBar">
+                Seacrh Box
+             </div>
+            Discover best vegetarian food.We can prepare food according to your instructions or you can make your own recipe ? <br><br><a href="menu.html"class="linksTop">Explore Menu</a>
+            <a href="recipe.html"class="linksTop">Make Recipe</a><br><br>
+        </div>
+       
 
 
 
-
-
-
-
-
-
-<div class="flex-container">
-<div class="flex-item"id="leftbox">
-
-We prepare food the way you like.<br>
-Even you can make your own.<br> <br>
-<a href="#"id='link1'>Create Now</a>
+        <div class="gridHead">Our Top Food</div>
+          <!-- GRIDS -->
+        <div class="grid">
+                <a href="index.html">
+                <div class="col">
+                    <img src="assets/pizza.jpg">
+                    <h3>PIZZA</h3>
+                </div></a>
+                <a href="index.html">
+                <div class="col">
+                    <img src="assets/sandwich.jpg">
+                    <h3>SANDWICHES</h3>
+                </div></a><a href="index.html">
+                <div class="col">
+                    <img src="assets/sandwich.jpg">
+                    <h3>DOSA</h3>
+                </div></a><a href="index.html">
+                <div class="col">
+                    <img src="assets/naan.jpg">
+                    <h3>NAAN</h3>
+                </div></a>
+        </div>
+    
 </div>
-<div class="flex-item"id="rightbox">
-    TOXIC <br>KITCHENS<br>
-    <span id="tagline">CAUTION Highly addictive</span>
-</div>
-</div>
+       
 
-<!-- FLEXBOXES -->
-<div class="container">
-    <div class="items">
-        <img src="assets/foodOrder.jpg"width="100%"class="images"><br>
-        Order Online<br>
-    </div>
-    <div class="items">
-        <img src="assets/customPrep.jpg"width="100%"class="images"><br>
-        Custom Prepration
-    </div>
+
+
+
+
+
+
+
+
+
+<p class="paragraph">
+Welcome to TOXIC KITCHENS. We provide services like food ordering, food preparation you can enjoy our food which is specialized with full spices to enhance the taaste.
+</p>
+
+
+<div class="options">
+    <label for="more"><span>EXPLORE</span></label>
+    <input type="checkbox"id="more">
+    <ul class="moreList">
+        <li><a href="#">ORDER</a></li>
+        <li><a href="#">SEND RECIPE </a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+    </ul>
 </div>
-<br>
-<br>
-<br>
-<br>
 
 
     Try Dark  Theme <a href="indexDark.html">Here</a></p>
 
+
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="sections">Services <ul><li><a href="#"class="links">Food Ordering</a></li>
+                                            <li><a href="#"class="links">Custom Prepration</a></li>
+                                            </ul></div>
+        <div class="sections">About <ul><li><a href="#"class="links">Company</a></li>
+            <li><a href="#"class="links">Team</a></li>
+            </ul></div>
+        <div class="sections">TOXIC KITCHENS<br><p>We make the food for people the way they like it by giving them option of custom prepration.Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus.
+             Aliquam in arcu eget velit pulvinar dictum vel in justo.</p></div>
+             
+    </div>
+    <div class="socialLinks"><a href="https://www.twitter.com/msingh_2000"class="s-links"><img src="assets/twitter.svg"width="40px"style="filter:invert(1);"></a>
+                <a href="https://instagram.com/msingh_2000"class="s-links"><img src="assets/iconmonstr-instagram-15-240.png"width="40px"style="filter:invert(1);"></a>
+            <a href="https://snapchat.com/manpreets1813"class="s-links"><img src="assets/snapchat.png"width="40px"style="filter:invert(1);"></a></a>
+        <a href="https://facebook.com/manpreetsingh"class="s-links"><img src="assets/facebook.svg"width="40px"style="filter:invert(1);"></a>
+    </div>
+    <div class="copyright">
+      Copyright © 2022 TOXIC KITCHENS Inc. All rights reserved
+    </div>
+</footer>
 </body>
 
 
+
+
+
+<!-- Navigation Bar JS -->
 <script>
 //for Toggle Bar
     const toggleButton = document.getElementById("toggle-button");
@@ -81,9 +145,7 @@ Even you can make your own.<br> <br>
 //for Toggle Bar animation
     let togglebutton=document.getElementById("toggle-button");
     togglebutton.onclick = function(){
-        togglebutton.classList.toggle("openmenu")
+        togglebutton.classList.toggle("openmenu")  
     };
-    
-   
 </script>
 </html>

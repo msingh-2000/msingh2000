@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXIC KITCHENS</title>
-    
-    <link rel="stylesheet" href="css/styleDark.css">
-   
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const navList = document.getElementById("nav-list");
+        toggleButton.addEventListener('click', () => {
+             navList.classList.toggle('active');
+        });
+    </script>
 </head>
 <body>
-<div class="circle">
-</div>
-
 <!-- Navigation bar -->
 <div class="navbg">
 <nav class="navbar">
@@ -26,11 +28,19 @@
     </ul>
     <div class="menu" id="toggle-button">
         <div class="menu-line"></div>
-        <div class="menu-line"></div>
+        <div class="menu-line"id='center-line'></div>
         <div class="menu-line"></div>
     </div>
 </nav>
 </div>
+
+
+
+
+
+
+
+
 
 
 <div class="flex-container">
@@ -88,15 +98,8 @@ Even you can make your own.<br>
      consectetur adipisicing elit. Iusto quia 
      assumenda amet accusantium voluptas quibusdam, 
      sed magnam aut id, odit laboriosam et earum distinctio nam ea \
-     ducimus est. Asperiores, consequuntur</p>
+     ducimus est. Asperiores, consequuntur<br>
+    Try Dark  Theme <a href="indexDark.html">Here</a></p>
+
 </body>
-
-
-<script>
-    const toggleButton = document.getElementById("toggle-button");
-    const navList = document.getElementById("nav-list");
-    toggleButton.addEventListener('click', () => {
-         navList.classList.toggle('active');
-    });
-</script>
 </html>
