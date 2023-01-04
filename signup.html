@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXIC KITCHENS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightnavbar.css">
 </head>
 <body>
 
@@ -15,9 +15,9 @@
 <nav class="navbar">
     <div class="logo" style="display: flex;"><a href="index.html"><img id="logoimg"src="assets/logo.png"height="35px"></a><a href="index.html"><span class="noBlink"> &nbsp;TOXIC </span><span class='Blink'> &nbsp;KITCHENS</span></a></div>
     <ul class="nav-list"id="nav-list">
-        <li class="list-item"><a href="">|&nbsp; HOME</a></li>
+        <li class="list-item"><a href="index.html">|&nbsp; HOME</a></li>
         <li class="list-item"><a href="menu.html">|&nbsp; MENU</a></li>
-        <li class="list-item"><a href="recipe.html">|&nbsp; RECIPES</a></li>
+        <li class="list-item"><a href="">|&nbsp; RECIPES</a></li>
         <li class="list-item"><a href="">|&nbsp; ORDERS</a></li>
         <li class="list-item"><a href="login.html">|&nbsp; LOGIN</a></li>
     </ul>
@@ -27,84 +27,27 @@
     </div>
 </nav>
 </div>
+<!-- NAVIGATION BAR END -->
 
-
-
-<!-- SECTION TOP -->
-<div class="sectionTop">
-    <div class="heading">
-        <div class="searchBar">
-            Seacrh Box
-        </div>
-         Discover best vegetarian food.We can prepare food according to your instructions or you can make your own recipe ? <br><br>
-         <a href="menu.html"class="linksTop">Explore Menu</a>
-        <a href="recipe.html"class="linksTop">Make Recipe</a><br><br>
+<div class="loginPageContainer">
+    <div class="rightPartContainer"></div>
+  
+   
+    <div class="leftPartContainer"><br><br>
+        <div class="LoginHeading">Create an account</div><p class="LoginHeadingPara">Let's get started with your account</p>
+        <form>
+            <input type="text"name="username"placeholder="Name"><br>
+            <input type="text"name="userid"placeholder="Email"><br>
+            <input type="password"name="userpassword"placeholder="Password"><br><br>
+            <input type="submit"name="submit"value="Create account"><br><br><p class="signupPara">Already have an account?<a href="login.html"> Log in</a></p>
+        </form>
     </div>
-       
-
-
-
-        <div class="gridHead">Our Top Food</div>
-          <!-- GRIDS -->
-        <div class="grid">
-                <a href="index.html">
-                <div class="col">
-                    <img src="assets/pizza.jpg">
-                    <h3>PIZZA</h3>
-                </div></a>
-                <a href="index.html">
-                <div class="col">
-                    <img src="assets/sandwich.jpg">
-                    <h3>SANDWICHES</h3>
-                </div></a><a href="index.html">
-                <div class="col">
-                    <img src="assets/sandwich.jpg">
-                    <h3>DOSA</h3>
-                </div></a><a href="index.html">
-                <div class="col">
-                    <img src="assets/naan.jpg">
-                    <h3>NAAN</h3>
-                </div></a>
-        </div>
-    
-</div>
-       
-
-
-
-
-
-
-
-
-
-
-<p class="paragraph">
-Welcome to TOXIC KITCHENS. We provide services like food ordering, food preparation you can enjoy our food which is specialized with full spices to enhance the taaste.
-</p>
-
-
-<div class="options">
-    <label for="more"><span>EXPLORE</span></label>
-    <input type="checkbox"id="more">
-    <ul class="moreList">
-        <li><a href="#">ORDER</a></li>
-        <li><a href="#">SEND RECIPE </a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-    </ul>
 </div>
 
 
 
 
-
-
-
-
-
-<!-- FOOTER START -->
+<!-- Footer -->
 <footer>
     <div class="footer-container">
         <div class="sections">Services 
@@ -135,24 +78,23 @@ Welcome to TOXIC KITCHENS. We provide services like food ordering, food preparat
     </div>
 </footer>
 <!-- FOOTER END -->
-</body>
-
+<body>
 
 
 
 
 <!-- Navigation Bar JS -->
 <script>
-//for Toggle Bar
-    const toggleButton = document.getElementById("toggle-button");
-    const navList = document.getElementById("nav-list");
-    toggleButton.addEventListener('click', () => {
-         navList.classList.toggle('active');
-    });
-//for Toggle Bar animation
-    let togglebutton=document.getElementById("toggle-button");
-    togglebutton.onclick = function(){
-        togglebutton.classList.toggle("openmenu")  
-    };
-</script>
+    //for Toggle Bar
+        const toggleButton = document.getElementById("toggle-button");
+        const navList = document.getElementById("nav-list");
+        toggleButton.addEventListener('click', () => {
+             navList.classList.toggle('active');
+        });
+    //for Toggle Bar animation
+        let togglebutton=document.getElementById("toggle-button");
+        togglebutton.onclick = function(){
+            togglebutton.classList.toggle("openmenu")  
+        };
+    </script>
 </html>

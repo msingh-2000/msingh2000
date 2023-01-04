@@ -6,34 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXIC KITCHENS</title>
     <link rel="stylesheet" href="css/lightnavbar.css">
-
-
-
     <style>
-        .tableContent{
-            padding:20px;
-            overflow-x: auto;
-        }
-        
-table{
-    font-family: lightFont;
-    font-size: 20px;
-    width:100%;
-    border-collapse: collapse;
-   
+/* RECIPES LIST CSS */
+.rList{
+    background-color: rgb(247, 247, 247);
+    padding:20px;
+    text-align: center;
+    margin:20px;
 }
-table td{
+.rList ul {
+    list-style: none;
+}
+.rList ul li {
     padding:10px;
-    background-color:#eeeeee;
-   
 }
-table th{
-    padding: 10px;
-    background-color:#39FF14;
-    text-align: left;
+.rList ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: lightFont;
 }
-.table tr:hover td{
-    background-color: red;
+.rList ul li:hover{
+    background-color: rgb(255, 255, 255);
 }
     </style>
 </head>
@@ -49,7 +43,7 @@ table th{
         <li class="list-item"><a href="menu.html">|&nbsp; MENU</a></li>
         <li class="list-item"><a href="">|&nbsp; RECIPES</a></li>
         <li class="list-item"><a href="">|&nbsp; ORDERS</a></li>
-        <li class="list-item"><a href="">|&nbsp; USER</a></li>
+        <li class="list-item"><a href="login.html">|&nbsp; LOGIN</a></li>
     </ul>
     <div class="menu" id="toggle-button">
         <div class="menu-line"id="line-1"></div>
@@ -57,50 +51,24 @@ table th{
     </div>
 </nav>
 </div>
+<!-- NAVIGATION BAR END -->
+
+
+
 
 <!-- RECIPE HEADING -->
 <div class="menuHeading"><span>TOXIC KITCHEN'S </span>RECIPES</div>
 
-<div class="tableContent">
-<table border="0px"align="center">
-    <tr>
-        <th>Ranking</th>
-        <th>Name</th>
-        <th>Creator</th>
-    </tr>
-    <tr>
+<!-- RECIPES LIST START   -->
+<div class="rList">
+    <ul class="rListElements">
+        <li>1 - <a href="#">Samosa</a>   <a href="#">- <i>Manpreet Singh</i></a></li>
+        <li>2 - <a href="#">Maggie</a>   <a href="#">- <i>Simranjit Singh</i></a></li>
+        <li>3 - <a href="#">Noodles</a>   <a href="#">- <i>unknown</i></a></li>
         
-        <td><a href="#">1</td>
-        <td>SAMOSA</td>
-        <td>MANPREET SINGH</td></a>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>MOMOS</td>
-        <td>SIMRANJIT SINGH</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>SAMOSA</td>
-        <td>MANPREET SINGH</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>SAMOSA</td>
-        <td>MANPREET SINGH</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>SAMOSA</td>
-        <td>MANPREET SINGH</td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>SAMOSA</td>
-        <td>MANPREET SINGH</td>
-    </tr>
-</table>
+    </ul>
 </div>
+<!-- RECIPES LIST END -->
 <br><br>
 
 
@@ -115,31 +83,40 @@ table th{
 <!-- Footer -->
 <footer>
     <div class="footer-container">
-        <div class="sections">Services <ul><li><a href="#"class="links">Food Ordering</a></li>
-                                            <li><a href="#"class="links">Custom Prepration</a></li>
-                                            </ul></div>
-        <div class="sections">About <ul><li><a href="#"class="links">Company</a></li>
-            <li><a href="#"class="links">Team</a></li>
-            </ul></div>
-        <div class="sections">TOXIC KITCHENS<br><p>We make the food for people the way they like it by giving them option of custom prepration.Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus.
-             Aliquam in arcu eget velit pulvinar dictum vel in justo.</p></div>
-             
+        <div class="sections">Services 
+            <ul>
+                <li><a href="#"class="links">Food Ordering</a></li>
+                <li><a href="#"class="links">Custom Prepration</a></li>
+            </ul>
+        </div>
+        <div class="sections">About 
+            <ul>
+                <li><a href="#"class="links">Company</a></li>
+                <li><a href="#"class="links">Team</a></li>
+            </ul>
+        </div>
+        <div class="sections">TOXIC KITCHENS<br>
+            <p>We make the food for people the way they like it by giving them option of custom prepration.Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus.
+                Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+        </div>       
     </div>
-    <div class="socialLinks"><a href="https://www.twitter.com/msingh_2000"class="s-links"><img src="assets/twitter.svg"width="40px"style="filter:invert(0);"></a>
-                <a href="https://instagram.com/msingh_2000"class="s-links"><img src="assets/iconmonstr-instagram-15-240.png"width="40px"style="filter:invert(0);"></a>
-            <a href="https://snapchat.com/manpreets1813"class="s-links"><img src="assets/snapchat.png"width="40px"style="filter:invert(0);"></a></a>
+    <div class="socialLinks">
+        <a href="https://www.twitter.com/msingh_2000"class="s-links"><img src="assets/twitter.svg"width="40px"style="filter:invert(0);"></a>
+        <a href="https://instagram.com/msingh_2000"class="s-links"><img src="assets/iconmonstr-instagram-15-240.png"width="40px"style="filter:invert(0);"></a>
+        <a href="https://snapchat.com/manpreets1813"class="s-links"><img src="assets/snapchat.png"width="40px"style="filter:invert(0);"></a></a>
         <a href="https://facebook.com/manpreetsingh"class="s-links"><img src="assets/facebook.svg"width="40px"style="filter:invert(0);"></a>
     </div>
     <div class="copyright">
-      Copyright © 2022 TOXIC KITCHENS Inc. All rights reserved
+        Copyright © 2022 TOXIC KITCHENS Inc. All rights reserved
     </div>
 </footer>
+<!-- FOOTER END -->
 <body>
 
 
 
 
-    <!-- Navigation Bar JS -->
+<!-- Navigation Bar JS -->
 <script>
     //for Toggle Bar
         const toggleButton = document.getElementById("toggle-button");
