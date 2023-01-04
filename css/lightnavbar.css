@@ -383,7 +383,8 @@ footer{
     margin-bottom: 10px;
 }
 .grids:hover img{
-    opacity:90%;
+    opacity:80%;
+    transition: 0.3s ease;
 }
 .grids:hover {
     cursor: pointer;
@@ -396,4 +397,124 @@ footer{
 }
 @media (min-width:1350px) {
     .grid-container{grid-template-columns:repeat(4,1fr);}
+}
+
+
+
+
+/* LOGIN-PAGE CSS */
+
+.loginPageContainer{
+    display: flex;
+    text-align: center;
+    height:750px;
+    /* background-color: #dff8d5; */
+    background-image: url('../assets/creator.jpg');
+    background-size: contain;
+    align-items: center;
+    font-family: LightFont;
+}
+.leftPartContainer .LoginHeading{
+    font-size: 40px;
+    padding:10px;
+    font-family: boldFont;
+}
+.LoginHeadingPara{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: rgb(78, 78, 78);
+}
+.leftPartContainer{
+    width:50%;
+    padding-top:8%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+}
+.leftPartContainer input[type=text]{
+    width:300px;
+    padding:10px;
+    margin:10px;
+    border-radius: 0px;
+    font-size:14px;
+    border:none;
+    border-bottom:1px solid rgb(145, 145, 145);
+    font-family: lightFont;
+}
+.leftPartContainer input[type=text]:focus{
+    /* background-color: rgb(248, 248, 248); */
+    transition: 0.4s ease;
+    border-color: #5398c2;
+    outline: none;
+}
+.leftPartContainer input[type=password]{
+    width:300px;
+    padding:10px;
+    margin:10px;
+    font-size:14px;
+    border:none;
+    border-bottom:1px solid rgb(145, 145, 145);
+    font-family: lightFont;
+}
+.leftPartContainer input[type=password]:focus{
+    /* background-color: rgb(252, 252, 252); */
+    transition: 0.4s ease;
+    border-color: #5398c2;
+    outline: none;
+}
+.leftPartContainer input[type=submit]{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    font-family: lightFont;
+    width:300px;
+    font-size: 15px;
+    margin-top:10px;
+    border:1px solid black;
+    border-radius: 4px;
+}
+.leftPartContainer input[type=submit]:hover{
+    background-color: rgb(36, 36, 36);
+    cursor: pointer;
+}
+.leftPartContainer a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.leftPartContainer a:visited{
+    color:#004d73;
+}
+.leftPartContainer .signupPara{
+    font-size: 14px;
+    padding:10px;
+    color: rgb(59, 59, 59);
+}
+.signupPara a{
+    font-size: 13px;
+    
+}
+.rightPartContainer{
+    width:50%;
+    padding:10px;
+    /* background-color: #dff8d5; */
+    background-image: url("../assets/creator.jpg");
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    padding:20px;
+}
+.rightPartContainer img{
+    width:200px;
+    /* filter:drop-shadow( 0px 0px 30px #39FF14); */
+}
+.rightPartContainer .rightPartContainerPara{
+    color:black;
+    padding:10px;
+}
+@media (max-width:800px) {
+    .rightPartContainer{
+        display: none;
+    }
+    .leftPartContainer{
+        width: 100%;
+    }
 }
